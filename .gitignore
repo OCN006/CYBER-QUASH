@@ -1,0 +1,25 @@
+# Virtual environment
+cyberml/
+venv/
+env/
+
+# Models
+models/
+*.pt
+*.bin
+*.safetensors
+
+# Data
+data/
+*.csv
+*.json
+
+# Cache
+__pycache__/
+.ipynb_checkpoints/
+.cache/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
