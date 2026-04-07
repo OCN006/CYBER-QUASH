@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberQuash – AI Toxicity & Sentiment Analyzer</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1 class="brand-title">CyberQuash</h1>
+        <p class="subtitle">Multilingual Toxicity + Sentiment AI</p>
+    </header>
+
+    <!-- MAIN CONTENT WRAPPER -->
+    <div class="container">
+
+        <!-- INPUT PANEL -->
+        <section class="input-panel">
+            <h2>Enter Text for Analysis</h2>
+
+            <textarea id="textInput" placeholder="Type or paste any message..."></textarea>
+
+            <button id="analyzeBtn">Analyze 🔍</button>
+        </section>
+
+        <!-- RESULT PANEL -->
+        <section id="resultBox" class="result-panel hidden">
+            <h2>Prediction Results</h2>
+
+            <div class="result-grid">
+
+                <div class="result-card">
+                    <h3>Sentiment</h3>
+                    <p id="sentimentLabel" class="result-value">—</p>
+                    <p id="sentimentConf" class="confidence-text">—</p>
+                </div>
+
+                <div class="result-card">
+                    <h3>Toxicity</h3>
+                    <p id="toxicityLabel" class="result-value">—</p>
+                    <p id="toxicityConf" class="confidence-text">—</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- INFO SECTION -->
+        <section class="info-section">
+
+            <h2>Model Capabilities</h2>
+
+            <div class="info-grid">
+
+                <div class="info-box">
+                    <h3>Cyberbullying Categories</h3>
+                    <ul>
+                        <li>🟢 Safe</li>
+                        <li>⚠ Offensive</li>
+                        <li>🔥 Hate / Toxic</li>
+                    </ul>
+                </div>
+
+                <div class="info-box">
+                    <h3>Sentiment Labels</h3>
+                    <ul>
+                        <li>😊 Positive</li>
+                        <li>😐 Neutral</li>
+                        <li>😡 Negative</li>
+                    </ul>
+                </div>
+
+                <div class="info-box">
+                    <h3>Supported Languages</h3>
+                    <p>
+                        English • Hindi • Bengali • Tamil • Malayalam • Kannada
+                    </p>
+                </div>
+
+            </div>
+        </section>
+
+    </div>
+
+    <footer>
+        © CyberQuash | CSDS057 | All Rights Reserved
+    </footer>
+
+</body>
+</html>
